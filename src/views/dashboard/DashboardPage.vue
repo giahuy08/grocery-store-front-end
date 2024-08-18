@@ -3,7 +3,7 @@
         <h1>Dash board</h1>
     </div>
 </template>
-<script setup>
+<script lang="ts" setup>
 
 </script>
 <style scoped>
