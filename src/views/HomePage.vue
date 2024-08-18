@@ -10,10 +10,12 @@
         <q-btn color="deep-orange" glossy label="Deep Orange" />
         <q-btn color="purple" label="Purple" />
         <q-btn color="black" label="Black" />
+        <Home />
   </div>
     </div>
 </template>
 <script lang="ts" setup>
+import Home from '@/components/home/Home.vue'
 </script>
 <style scoped>
     
