@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Header />
         <h1>Home page</h1>
         <div class="q-pa-md q-gutter-sm">
         <q-btn color="white" text-color="black" label="Standard" />
@@ -16,6 +17,7 @@
 </template>
 <script lang="ts" setup>
 import Home from '@/components/home/Home.vue'
+import Header from '@/components/home/Header.vue'
 </script>
 <style scoped>
     

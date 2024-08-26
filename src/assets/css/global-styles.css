@@ -6,6 +6,7 @@
 	--green-primary: #16b67c;
 	--gray-hover: #2e2e2e;
     --shadow-primary: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+	--primary-color: #3BB77E;
 }
 body {
 	font-size: 14px;
