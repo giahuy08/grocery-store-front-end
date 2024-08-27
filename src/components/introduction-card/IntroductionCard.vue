@@ -46,68 +46,96 @@ const props = defineProps<{
   </div> 
 </template>
 
-<style lang="sass" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap')
-.orange-badge
-  color: #FFFFFF
-  background: #FFD480
-.green-badge
-  color: #FFFFFF
-  background: #3BB77E
-.card-bg-orange
+<style lang="scss" scoped>
+.orange-badge {
+  color: #FFFFFF;
+  background: #FFD480;
+}
+.green-badge {
+  color: #FFFFFF;
+  background: #3BB77E;
+}
+.card-bg-orange {
   background-color: rgba(255,245,225,.85)
-.card-bg-green
+}
+.card-bg-green {
   background-color: rgba(210,239,225,.85)
-.intro-card-container
-  background-image: url(../../assets/images/intro-card-bg.png)
-  max-width: 590px
-  width: 100%
-.intro-card
-  height: 300px
-  padding: 33px 0px 33px 48px
-  font-family: "Quicksand", sans-serif
-  .intro-card-wrapper
-    height: 100%
-    .main-container
-      height: fit-content
-    .image-container
-      position: absolute
-      bottom: -33px
-      right: 0
-      width: fit-content
-      .img-promote
-        object-fit: contain
-  .wrapper-main
-    height: 140px
-    width: 300px
-    flex-direction: column
-    justify-content: space-between
-    margin-bottom: 43px
-  .badge
-    width: 86px
-    height: 26px
-    padding: 7px
-    border-radius: 3px
-    font-size: 12px
-  .title
-    font-size: 28px
-    margin: 0 0 15px
-    font-weight: 600
-    line-height: 35px
-  .content
-    font-size: 18px
-    color: #838383
-    font-weight: 500
-    line-height: 23px
-  .btn
-    background-color: #3BB77E
-    color: #FFFFFF
-    font-size: 16px
-    padding: 14px
-    width: 143px
-    height: 52px
-    .text
-      margin-right: 9px
-    .icon
-      font-size: 18px
+}
+.intro-card-container {
+  background-image: url(../../assets/images/intro-card-bg.png);
+  max-width: 590px;
+  width: 100%;
+
+  .intro-card {
+    height: 300px;
+    padding: 33px 0px 33px 48px;
+    font-family: "Quicksand", sans-serif;
+
+    .intro-card-wrapper {
+      height: 100%;
+
+      .main-container {
+        height: fit-content;
+
+        .wrapper-main {
+          height: 140px;
+          width: 300px;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-bottom: 43px;
+
+          .badge {
+            width: 86px;
+            height: 26px;
+            padding: 7px;
+            border-radius: 3px;
+            font-size: 12px;
+          }
+
+          .title {
+            font-size: 28px;
+            margin: 0 0 15px;
+            font-weight: 600;
+            line-height: 35px;
+          }
+          
+          .content {
+            font-size: 18px;
+            color: #838383;
+            font-weight: 500;
+            line-height: 23px;
+          }
+        }
+
+        .btn {
+          background-color: #3BB77E;
+          color: #FFFFFF;
+          font-size: 16px;
+          padding: 14px;
+          width: 143px;
+          height: 52px;
+
+          .text {
+            margin-right: 9px;
+          }
+
+          .icon {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .image-container {
+        position: absolute;
+        bottom: -33px;
+        right: 0;
+        width: fit-content;
+
+        .img-promote {
+          object-fit: contain;
+        }  
+      } 
+    }  
+  }
+}
 </style>

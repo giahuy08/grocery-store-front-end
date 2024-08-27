@@ -49,11 +49,12 @@ const listIntroductionCard = ref([
   },
 ])
 </script>
-<style>
+<style lang="scss">
   .padding-container {
     padding: 0 120px;
-  }
-  .introduction-card-list {
-    width: 100%;
-  }
+
+    .introduction-card-list {
+      width: 100%;
+    }
+  }  
 </style>
